@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Pokemon";
+  src: url("/path-to-your-fonts/PokemonSolid.ttf") format("truetype");
+}
+img {
+  width: 100%;
+}
+body {
+  background-color: #e1f0ff;
+}
+
+.logo {
+  font-family: "Pokemon", sans-serif;
+}
+
+header {
+  font-family: "Verdana", "Comic Sans MS", sans-serif;
+  background-color: #f8f9fa; /* Light background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 10px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff; /* Accent color */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Space between menu items */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  font-size: 1rem;
+  color: #343a40; /* Text color */
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+nav ul li:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+/* pokemon season list in home page */
+.pokemon-season {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.pokemon-season-card {
+  width: 50%;
+}
+.pokemon-season-card-inner {
+  margin: 15px;
+  border: 2px solid #222222;
+  border-radius: 30px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+.pokemon-season-image {
+  border: 2px solid #222222;
+  border-radius: 25px;
+}
+.pokemon-season-image img {
+  border-radius: 25px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
