@@ -1,7 +1,7 @@
-import { useLocation } from "react-router-dom";
+// import { useLocation } from "react-router-dom";
 
-const location = useLocation();
-const { seasonInfo } = location.state || {};
+// const location = useLocation();
+// const { seasonInfo } = location.state || {};
 const DetailPage = () => {
   return <>test</>;
 };
