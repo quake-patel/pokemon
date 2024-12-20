@@ -1,5 +1,3 @@
-
-
 const DetailPage = () => {
   return <>test</>;
 };
