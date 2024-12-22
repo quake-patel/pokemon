@@ -33,19 +33,20 @@ const SeasonInfo = () => {
   }, [seasonInfo]);
 
   const navigate = useNavigate();
-  const handleClick = (seasonInfo) => {
-    navigate("/detailPage", { state: { seasonInfo } });
+  const handleClick = (pokemon) => {
+    navigate("/detailPage", { state: { pokemon } });
   };
 
   return (
     <div>
       {seasonInfo ? (
-        <div
-          className='pokemon-season container'
-          onClick={() => handleClick(seasonInfo)}
-        >
+        <div className='pokemon-season container'>
           {singlePokemon.map((pokemon) => (
-            <div key={pokemon.name} className='pokemon-item'>
+            <div
+              onClick={() => handleClick(pokemon)}
+              key={pokemon.name}
+              className='pokemon-item'
+            >
               {pokemon.image ? (
                 <img src={pokemon.image} alt={pokemon.name} />
               ) : (
